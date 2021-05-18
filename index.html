@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="sub-header">
+        <div class="container">
+            <div class="oportunidade">
+                <p><span class="icon-upload"></span> Envie sua oportunidade</p>
+            </div>
+            <div class="busca">
+                <span class="icon-search"></span>
+            </div>
+            <div class="form-busca">
+                <form action="">
+                    <input id="search" name="search" type="text" placeholder="Buscar...">
+                    <input id="search_submit" value="OK" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__brand">
+                    <h1>
+                        <a href="index.html">
+                            <img src="images/signal-logo-header.png" alt="Signal Capital">
+                        </a>
+                    </h1>
+                </div>
+                  
+                <span class="navbar__toggle-menu">
+                    <button class="hamburger hamburger--stand" type="button">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </span>
+
+                <ul class="navbar__menu">
+                    <li>
+                        <a href="" class="navbar__link">A gestora</a>
+                        <span class="navbar__toggle-dropdown"></span>
+                        <ul class="navbar__dropdown">
+                            <li><a href="quem-somos.html" class="navbar__link">Quem somos</a></li>
+                            <li><a href="estrategia.html" class="navbar__link">Estratégia de investimento</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="equipe.html" class="navbar__link">Equipe</a></li>
+                    <li>
+                        <a href="#" class="navbar__link">Produtos</a>
+                        <span class="navbar__toggle-dropdown"></span>
+                        <ul class="navbar__dropdown">
+                            <li><a href="fundo1.html" class="navbar__link">Fundo 1</a></li>
+                            <li><a href="fundo2.html" class="navbar__link">Fundo 2</a></li>
+                            <li><a href="fundo3.html" class="navbar__link">Fundo 3</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Comunicação</a>
+                        <span class="navbar__toggle-dropdown"></span>
+                        <ul class="navbar__dropdown">
+                            <li><a href="educacional.html" class="navbar__link">Educacional</a></li>
+                            <li><a href="documentos.html" class="navbar__link">Documentos</a></li>
+                            <li><a href="news.html" class="navbar__link">News</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Relação com investidores</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="navbar__link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <h2 class="signal signal-home">Somos uma <br> gestora independente, <br> focada em soluções <br> para mercados <br> privados.</h2>
+        </div>
+    </header>
+
+    <section class="section-box-divider">
+        <div class="text-container">
+            <h2 class="title-section">Quem somos</h2>
+            <p>Fundada em 2011, a Signal conta com mais de 10 anos atuando no
+            mercado local, com ampla experiência em investimentos alternativos.
+            A gestora carrega em seu DNA os mesmos padrões institucionais
+            adotados pelos maiores investidores de Private Equity do mundo
+            durante o processo de análise e monitoramento dos investimentos.</p>
+            <a href="" class="btn-theme">Saiba mais</a>
+        </div>
+
+        <div class="image">
+            <img src="images/img-quem-somos.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="page-section section-produtos">
+        <div class="container">
+            <h2 class="title-section">Nossos Produtos</h2>
+            <ul class="list-box">
+                <li>
+                    <a href="fundo1.html">
+                        <img src="images/payment-terminal.png" alt="">
+                        <p>Fundo I</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="fundo2.html">
+                        <img src="images/financial-bar-chart.png" alt="">
+                        <p>Fundo II</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="fundo3.html">
+                        <img src="images/chat.png" alt="">
+                        <p>Fundo III</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="page-section banner-footer">
+        <div class="water"></div>
+        <svg>
+            <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+                <feTurbulence id="sea-filter" numOctaves="8" seed="10" baseFrequency="0.02 0.05"></feTurbulence>
+                <feDisplacementMap scale="5" in="SourceGraphic"></feDisplacementMap>
+                <animate xlink:href="#sea-filter" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1" values="0.02 0.06;0.04 0.08;0.02 0.06" repeatCount="indefinite"/>
+            </filter>
+        </svg>
+
+        <div class="container">
+            <div class="text-container">
+                <h2 class="title-section">Nossas soluções</h2>
+                <p>A gestora carrega em seu DNA os mesmos padrões institucionais adotados pelos maiores investidores de Private Equity do mundo durante o processo de análise e monitoramento dos investimentos.</p>
+                <p>A estratégia da Signal Capital é ter uma abordagem integrada de investimentos primários, secundários e diretos. A construção de portfólio através de Fundos de Fundos integrados é capaz de proporcionar uma grande vantagem estratégica e operacional para o investidor uma vez que além da gestão e monitoramento do portfólio a Signal Capital consolida todo o processo operacional e backoffice.</p>
+                <a href="" class="btn-theme">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logo">
+                <a href="">
+                    <img src="images/signal-logo-footer.png" alt="">
+                </a>
+            </div>
+            <div class="endereco">
+                <span class="icon-location_pin"></span>
+                <div>
+                    <p>Avenida Niemeyer 2, 101, Leblon</p>
+                    <p>Rio de Janeiro, RJ - 22450-220</p>
+                </div>
+            </div>
+            <div class="telefone">
+                <span class="icon-phone"></span>
+                <div>
+                    <p>Tel.: +55 21 3520 8903</p>
+                    <p><a href="mailto:contato@signalcapital.com.br">contato@signalcapital.com.br</a></p>
+                </div>
+            </div>
+        </div>
+   </footer>
+
+    <div class="overlay"></div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/theme.js"></script>
+</body>
+</html>

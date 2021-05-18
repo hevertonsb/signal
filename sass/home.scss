@@ -1,0 +1,62 @@
+.section-box-divider{
+    background-color: $green-blue;
+    padding-bottom: 0;
+    border-top:1px solid #336586;
+    @include lg{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .text-container{
+        color:$white;
+        padding: 5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        @include lg{
+            padding: 10rem 3.5rem;
+            width: 38%;
+            margin: auto;
+            margin-right: 10rem;
+        }
+        @include mega-xl{
+            margin-right: 22rem;
+            width: 36%;
+            padding-left: 0;
+        }
+        p{
+            @include font(2rem, 3rem, initial, $style:normal, $weight: normal);
+            margin-bottom: 5rem;
+            margin-top: 0;
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+        .btn-theme{
+            margin-top: 5rem;
+        }
+    }
+
+    .image{
+        width: 100%;
+        height: 20rem;
+        // @include background($green-blue, url('../images/img-quem-somos.jpg'), $repeat:no-repeat, $position: center center, $attachment:initial, $size:cover);
+        @include lg{
+            min-height: 40rem;
+            width: 64rem;
+            height: auto;
+        }
+    }
+
+    .btn-theme{
+        background-color: $light-blue;
+    }
+}
+
+.section-produtos{
+    text-align: center;
+    h2{
+        color:$blue;
+    }
+}

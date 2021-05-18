@@ -1,0 +1,53 @@
+footer{
+    padding: 6rem 0;
+
+    .container{
+        @include lg{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 112rem;
+        }
+        p, a{
+            @include font(1.5rem, 1rem, initial, $style:normal, $weight: normal);
+            padding: 0;
+            margin: 1rem 0;
+            color:$gray;
+        }
+
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        .logo{
+            a{
+                width: 100%;
+                height: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .endereco, .telefone{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4rem 0;
+            @include lg{
+                margin: 0;
+            }
+        }
+
+        .telefone{
+            margin-bottom: 0;
+        }
+
+        span{
+            color:$blue;
+            font-size: 4.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+}

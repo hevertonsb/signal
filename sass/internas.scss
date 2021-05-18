@@ -1,0 +1,248 @@
+.section-internas{
+    .container{
+        max-width: 87rem;
+        h2{
+            @include font(4.8rem, 5rem, initial, $style:normal, $weight: normal);
+            font-family: 'proxima_novabold';
+            color:$light-blue;
+            margin: 0;
+        }
+        h3{
+            @include font(3rem, 4rem, initial, $style:normal, $weight: normal);
+            font-family: 'proxima_novabold';
+            color:$dark-blue;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+        }
+        p{
+            font-size: 2.5rem;
+            color:$dark-blue;
+            margin: 1.5rem 0;
+            strong{
+                font-family: 'proxima_novabold';
+            }
+        }
+    }
+}
+
+.section-contato{
+    background-color: $white;
+    .text-container{
+        a{
+            color:$blue;
+            @include font(2.5rem, 3rem, initial, $style:normal, $weight: normal);
+            font-family: 'proxima_novabold';
+            &:hover{
+                color:$light-blue;
+            }
+        }
+
+        .box-icon{
+            display: flex;
+            align-items: center;
+            margin-top: 4rem;
+            span{
+                color:$blue;
+                font-size: 4.5rem;
+                margin-right: 2rem;
+            }
+            div{
+                p{
+                    margin: 0;
+                    color:#747474;
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.map{
+    width: 100%;
+    // height: auto;
+    height: 45rem;
+    overflow: hidden;
+    background-color: $blue;
+    iframe{
+        height: inherit;
+    }
+}
+
+.section-equipe{
+    .container{
+        @include lg{
+            max-width: 123rem;
+        }
+    }
+}
+
+.section-estrategia{
+   background-color: #e1e1e1;
+   .text-container{
+       color:$dark-blue;
+       p{
+           font-size: 2.5rem;
+           color:#264e7c;
+       }
+   }
+}
+
+.section-quem-somos{
+    background-color: $white;
+    .text-container{
+        p{
+            color:#264e7c;
+            &:first-child{
+                font-size: 2.583rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.section-news{
+    .container{
+        max-width: 110rem;
+    }
+    .news-content{
+        .date{
+            margin: 0;
+        }
+        .title{
+            margin-bottom: 3rem;
+        }
+        p{
+            color:#264e7c;
+            font-size: 2.1rem;
+            margin-top: 4rem;
+        }
+        strong{
+            font-style: italic;
+        }
+        @include lg{
+            max-width: 70rem;
+            margin: auto;
+        }
+    }
+}
+
+.content-quem-somos{
+    .container{
+        @include lg{
+            max-width: 105rem;
+            margin: auto;
+        }
+    }
+    h3{
+        @include font(4.3rem, 5rem, initial, $style:normal, $weight: normal);
+        font-family: 'proxima_novabold';
+        color:$light-blue;
+        margin: 0;
+    }
+
+    p{
+        @include font(2.583rem, 3.75rem, initial, $style:normal, $weight: normal);
+        margin-top: 2rem;
+        margin-bottom: 7rem;
+        @include lg{
+            max-width: 90rem;
+        }
+    }
+}
+
+.page-educacional{
+    .main-box{
+        @include lg{
+            padding: 0 4.5rem;
+        }
+        h3{
+            @include font(2.6rem, 3rem, initial, $style:normal, $weight: normal);
+            font-family: 'proxima_novabold';
+            color:$light-blue;
+            text-transform: none;
+            margin-bottom: 1.25rem;
+        }
+        p{
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+            color:$dark-blue;
+        }
+    }
+   
+    .container{
+        @include lg{
+            max-width: 106.4rem;
+        }
+    }
+    .row-content{
+        margin-bottom: 5rem;
+        @include lg{
+            display: flex;
+            justify-content: space-between;
+            // align-items: flex-start;
+        }
+        img{
+            margin: 4rem 0;
+            @include md{
+                margin-right: 5.5rem;
+            }
+        }
+    }
+    .main-box-educacional{
+        @include md{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box-left, .box-right{
+            @include md{
+                width: 45%;
+            }
+        }
+    }
+    .content-educacional{
+        .title-itens{
+            @include font(4.8rem, 4.5rem, initial, $style:normal, $weight: normal);
+            font-family: 'proxima_novabold';
+            color:$light-blue;
+            margin-bottom: 2.5rem;
+            margin-top: 0;
+        }
+        p{
+            font-size: 2.4rem;
+            line-height: 3rem;
+            margin-bottom: 7rem;
+        }
+
+        img{
+            width: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+.lista-estrategia{
+    ul{
+        li{
+            .container{
+                max-width: 110rem;
+            }
+        }
+    }
+}
+// .section-estrategia{
+//     .text-container{
+//         @include lg{
+//             padding: 10rem 3.5rem;
+//             width: 38%;
+//             margin: auto;
+//             margin-right: 10rem;
+//         }
+//         @include mega-xl{
+//             margin-right: 30rem;
+//             width: 36%;
+//             padding-left: 0;
+//         }
+//     }
+// }
+

@@ -1,0 +1,169 @@
+.sub-header{
+    background-color: $white;
+    height: 5rem;
+    // padding: 1.75rem 0;
+    .container{
+        position: relative;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .oportunidade{
+            background-color: #082e4a;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:$white;
+            p{
+                width: 25rem;
+                text-transform: uppercase;
+                @include font(1.2rem, 1.35rem, initial, $style:normal, $weight: normal);
+                text-align: center;
+                word-spacing: .14rem;
+                letter-spacing: .14rem;
+            }
+        }
+
+        .busca{
+            z-index: 10;
+            cursor: pointer;
+            position: relative;
+            span{
+                font-size: 2.35rem;
+                margin-left: 2.5rem;
+                color:$blue;
+                z-index: 10;
+            }
+        }
+
+        .form-busca{
+            // display: none;
+            z-index: 10;
+            position: absolute;
+            right: 0;
+            top:5rem;
+            background-color: $white;
+            padding: 1rem;
+            width: 29.9rem;
+            display: flex;
+            flex-direction: column;
+            form{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                input[type="text"], input[type="email"]{
+                    width: 87%;
+                    padding: 1rem;
+                    font-size: 1.4rem;
+                    display: inline-block;
+                    border: 1px solid $dark-blue;
+                    outline: none;
+                    color: $dark-blue;
+                    margin-right: 1rem;
+                }
+                input[type="submit"], button{
+                    padding: 1rem;
+                    font-size: 1.4rem;
+                    background-color: $dark-blue;
+                    border: 1px solid $dark-blue;
+                    color:$white;
+                    cursor: pointer;
+                    transition: all .3s ease-in;
+                    &:hover{
+                        opacity: .8;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+header{
+    @include background(#054c7b, url('../images/bg-header.jpg'), $repeat:no-repeat, $position: center center, $attachment:fixed, $size:cover);
+    height: 100%;
+    padding-bottom: 5rem;
+    @include md{
+        min-height: 60rem;
+    }
+    @include xl{
+        padding-bottom: 5rem;
+    }
+    .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .signal{
+            margin-top: 5rem;
+            padding: 2.5rem 0 0 2.5rem;
+            color:$white;
+            font-family: 'proxima_novabold';
+            @include font(4rem, 4rem, initial, $style:normal, $weight: normal);
+            @include lg{
+                width: 63rem;
+                padding: 3.5rem 0 0 3.5rem;
+                height: fit-content;
+                margin-left: 10rem;
+                margin-top: 15rem;
+            }
+            @include md{
+                font-size: 6rem;
+                line-height: 6rem;
+                &:after{
+                    bottom: -1rem;
+                    right: 31rem;
+                }
+            } 
+        }
+    }
+}
+
+.interna{
+    background-image: none;
+    @include md{
+        min-height: 390px;
+    }
+    @include lg{
+        padding-bottom: 0;
+    }
+    .container{
+        .signal{
+            font-family: "proxima_novaregular";
+            align-self: center;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 3rem;
+            text-align: center;
+            margin-left: 0;
+            width: fit-content;
+            line-height: 4rem;
+            margin-right: 4.5rem;
+            @include md{
+                font-size: 4rem;
+            }
+            &:before{
+                @include md{
+                    left: -1rem;
+                }
+            }
+            &:after{
+                @include md{
+                    right: -5rem;
+                }
+            }
+            span{
+                display: block;
+                font-size: 2.1rem;
+            }
+            @include lg{
+                margin-top: 6rem;
+                padding: 2.5rem 0 0 4.5rem;
+            }
+
+            @media screen and (max-width:400px){
+                margin-right: 2.5rem;
+            }
+        }
+    }
+}

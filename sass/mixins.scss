@@ -1,0 +1,182 @@
+// Mixin Media Queries
+
+// Small devices
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+ 
+// Medium devices
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+ 
+// Large devices
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+ 
+// Extra large devices
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+// Mega large devices
+@mixin mega-xl {
+	@media (min-width: #{$screen-megaxl-min}) {
+		@content;
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////
+
+// Custom devices
+@mixin htr($screen) {
+	@media (min-width: $screen+'px') {
+		@content;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Mixin to customize scrollbars
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+	// For Google Chrome
+	::-webkit-scrollbar {
+		width:  $size;
+		height: $size;
+	}
+  
+	::-webkit-scrollbar-thumb {
+		background: $foreground-color;
+	}
+  
+	::-webkit-scrollbar-track {
+		background: $background-color;
+	}
+  
+	// For Internet Explorer
+	body {
+	  scrollbar-face-color: $foreground-color;
+	  scrollbar-track-color: $background-color;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Transitions
+@mixin transition($args...) {
+	-webkit-transition: $args;
+	-moz-transition: $args;
+	-ms-transition: $args;
+	-o-transition: $args;
+	transition: $args;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Custom Form Placeholder
+
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Custom Selection Text
+
+@mixin selection {
+	::-moz-selection { @content; }
+	::selection { @content; }
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Disable selected
+
+@mixin unselectable {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Flexbox Container
+
+@mixin flex ($direction, $justify, $align){
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+    align-items:$align;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// FadeIn - FadeOut
+
+@mixin fade($fade, $timing, $length, $count, $fill){ 
+	animation: $fade $timing $length;
+	animation-iteration-count: $count; 
+	animation-fill-mode: $fill; 
+} 
+@keyframes fadeIn { 
+	0% { opacity: 0; } 
+	100% { opacity: 1; } 
+} 
+@keyframes fadeOut { 
+	0% { opacity: 1; } 
+	100% { opacity: 0; } 
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Font
+
+@mixin font($size, $height, $spacing, $style:normal, $weight: normal){
+	font-size: $size;
+	font-style: $style;
+	font-weight: $weight;
+	line-height: $height;
+	letter-spacing: $spacing;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Background
+
+@mixin background($color, $image, $repeat:no-repeat, $position: center center, $attachment:fixed, $size:cover){
+	background-color: $color;
+	background-image: $image;
+	background-repeat: $repeat;
+	background-position: $position;
+	background-attachment: $attachment;
+	background-size: $size;
+}
+
+////////////////////////////////////////////////////////////////////////
+
+// Button
+
+@mixin button($color, $bg-color, $align:center, $decoration:none){
+	color: $color;
+	background-color: $bg-color;
+	text-align: $align;
+	text-decoration: $decoration;
+}

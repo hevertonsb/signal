@@ -1,0 +1,89 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+@import "header";
+@import "footer";
+
+@import "menu";
+@import "components";
+
+@import "home";
+@import "internas";
+
+@import "hamburgers";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: sans-serif;
+    font-family: 'proxima_novaregular';
+}
+
+.bodyOverflow{
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    @include transition(all .3s ease);
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 1.7;
+}
+
+img{
+    max-width: 100%;
+    @include unselectable;
+}
+
+@include selection{
+    background-color: $dark-blue;
+    color:$white;
+}
+
+@include scrollbars(1.55em, $blue);
+
+input,
+textarea {
+    @include input-placeholder {
+        color: $dark-blue;
+    }
+}
+
+.container {
+    padding: 0 1.5rem;
+    margin: auto;
+    // border:1px solid orangered;
+    @include xl{
+        max-width: 1115px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    @include mega-xl{
+        max-width: 1330px;
+    }
+}
+
+.page-section{
+    padding:5rem 0;
+    @include md{
+        padding:8.5rem 0;
+    }
+}
+
+
