@@ -1,6 +1,6 @@
 footer{
     padding: 6rem 0;
-
+    position: relative;
     .container{
         @include lg{
             display: flex;
@@ -53,5 +53,13 @@ footer{
             font-size: 4.5rem;
             margin-right: 1rem;
         }
+    }
+
+    .mgstudio{
+        position: absolute;
+        right: 2rem;
+        bottom: 1.5rem;
+        color:$blue;
+        font-size: 1.2rem;
     }
 }
