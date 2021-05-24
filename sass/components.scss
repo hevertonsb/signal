@@ -453,9 +453,9 @@ ul.list-box{
     background-color: $dark-blue;
     overflow: auto;
     .container{
-        @include lg{
-            max-width: 137rem;
-        }
+        // @include lg{
+        //     max-width: 137rem;
+        // }
         ul {
             position: relative;
             margin: 100px auto;

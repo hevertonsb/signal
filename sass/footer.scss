@@ -30,7 +30,7 @@ footer{
             }
         }
 
-        .endereco, .telefone{
+        .endereco, .telefone, .selo{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -41,6 +41,10 @@ footer{
         }
 
         .telefone{
+            margin-bottom: 0;
+        }
+
+        .selo{
             margin-bottom: 0;
         }
 
