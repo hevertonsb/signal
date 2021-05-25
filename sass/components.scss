@@ -84,6 +84,7 @@ ul.list-box{
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        flex-wrap: wrap;
     }
     @include lg{
         width: 85rem;
